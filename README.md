@@ -19,7 +19,7 @@ webapck -p
 ```
 webpack -p --config ./webpack.prod.config.js
 ```
-The -p tells webpack to generate a production build. You have to change the build script in package.json to include the production flag.
+The -p tells webpack to generate a production build. You have to change the build script in ```package.json``` to include the production flag.
 
 ## webpack.config.js
 ```
