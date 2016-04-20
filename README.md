@@ -90,7 +90,8 @@ Dispatching Object { type: "REQUEST_DATA" }
 Action with type "REQUEST_DATA" took 108.28 milliseconds.
 ```
 
-
+### React Performance
+Refer to https://reactjsnews.com/how-to-make-your-react-apps-10x-faster for more info.
 
 
 
