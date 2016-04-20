@@ -1,7 +1,5 @@
 # react-prod-bundler
-Reference for bundling prod ready react builds using webpack
-
-# Steps to minimize prod builds
+Reference for bundling prod ready react builds using webpack (steps to minimize prod builds).
 
 ## Use Webpack Bundle Size Analyzer
 A tool for finding out what contributes to the size of Webpack bundles
