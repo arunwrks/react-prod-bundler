@@ -2,7 +2,16 @@
 Reference for bundling prod ready react builds using webpack
 
 # Steps to minimize prod builds
-## webpack.config.js ->
+
+## Running webpack CLI with production command
+
+```
+webpack --production
+or
+webapck -p
+```
+
+## webpack.config.js
 ```
 module.exports = {
   // devtool: 'eval' // for development - bundles a lot of dev code info
