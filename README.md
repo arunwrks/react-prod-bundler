@@ -41,6 +41,11 @@ plugins: [
     })
 ],
 ```
+
+## Webpack advanced configuration for React
+
+Refer to http://www.pro-react.com/materials/appendixA/ for detailed explaination.
+
 ## Library way imports (ES6 de-structing syntax) Vs Component way imports
 
 Always use Component way of imorting.
