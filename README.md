@@ -15,9 +15,9 @@ webpack --production
 or
 webapck -p
 ```
-## Use dedicated ```webpack.prod.config.js``` file for production build
+## Use dedicated ```webpack.production.config.js``` file for production build
 ```
-webpack -p --config ./webpack.prod.config.js
+webpack -p --config ./webpack.production.config.js
 ```
 The -p tells webpack to generate a production build. You have to change the build script in ```package.json``` to include the production flag.
 
