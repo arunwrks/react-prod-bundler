@@ -15,6 +15,11 @@ webpack --production
 or
 webapck -p
 ```
+## Use dedicated ```webpack.prod.config.js``` file for production build
+```
+webpack -p --config ./webpack.prod.config.js
+```
+The -p tells webpack to generate a production build. You have to change the build script in package.json to include the production flag.
 
 ## webpack.config.js
 ```
@@ -24,8 +29,11 @@ module.exports = {
 },
 
 plugins: [
+    // CommonsChunkPlugin extracts the common code from all your chunks and put it in a separate file common.js
+    new webpack.optimize.CommonsChunkPlugin('common.js'), 
     new webpack.optimize.UglifyJsPlugin(),  // minifies/uglifies your code
     new webpack.optimize.DedupePlugin(),    // replaces duplicate code to minimize file-size
+    new webpack.optimize.AggressiveMergingPlugin(),
     new webpack.DefinePlugin({              // tells webpack to omit some things it uses for node environment builds
         'process.env': {                    // results ~30% decrease in size
             'NODE_ENV': JSON.stringify('production')
