@@ -69,3 +69,28 @@ import FlatButton from 'material-ui/lib/flat-button';
 This will only bundle Button, FlatButton and their respective dependencies. But not the whole library. So I would try to get rid of all your library imports and use the component way instead.
 
 If you are not using lot of components then it should reduce considerably the size of your bundled file.
+
+--------------------------------------------------------------------------------------
+
+### Tools (Dev): Redux action dispatch time profiling middleware
+
+https://www.npmjs.com/package/redux-perf-middleware
+
+Measure the time that the actions need to change the state.
+#### Usage:
+```
+import perflogger from 'redux-perf-middleware';
+ 
+const createStoreWithMiddleware = applyMiddleware( perflogger )(createStore);
+const store = createStoreWithMiddleware(reducer);
+```
+This middleware will log something like below in console:
+```
+Dispatching Object { type: "REQUEST_DATA" }
+Action with type "REQUEST_DATA" took 108.28 milliseconds.
+```
+
+
+
+
+
