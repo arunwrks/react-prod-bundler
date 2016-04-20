@@ -3,6 +3,11 @@ Reference for bundling prod ready react builds using webpack
 
 # Steps to minimize prod builds
 
+## Use Webpack Bundle Size Analyzer
+A tool for finding out what contributes to the size of Webpack bundles
+
+https://github.com/robertknight/webpack-bundle-size-analyzer
+
 ## Running webpack CLI with production command
 
 ```
